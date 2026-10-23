@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="360" viewBox="0 0 590 360">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#111b30" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="neon" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1528"/><stop offset="1" stop-color="#080d1a"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter><radialGradient id="amb" cx="0.15" cy="0.1" r="0.8"><stop offset="0" stop-color="#6366f1" stop-opacity="0.16"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+    <clipPath id="frame"><rect width="590" height="360" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .fi { opacity:0; animation: fi .7s ease-out forwards; }
+    .dot { animation: blink 1.6s ease-in-out infinite; }
+    @keyframes fi { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
+    @keyframes blink { 50% { opacity:.25; } }</style>
+  <g clip-path="url(#frame)">
+    <rect width="590" height="360" fill="#05070d"/>
+    <rect width="590" height="360" fill="url(#grid)"/>
+    <rect width="590" height="360" fill="url(#amb)"/>
+    <text x="36" y="56" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="15" fill="#22d3ee" letter-spacing="3">&gt; CURRENTLY</text><line x1="161.5" y1="51" x2="554" y2="51" stroke="#1e293b" stroke-width="1"/><g class="fi" style="animation-delay:0.2s"><rect x="36" y="88" width="518" height="42" rx="10" fill="url(#card)" stroke="#1e293b"/><circle class="dot" style="animation-delay:0.0s" cx="58" cy="109" r="5" fill="#22c55e" filter="url(#glow)"/><text x="76" y="115" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#e2e8f0">Building production AI agents</text><text x="538" y="115" text-anchor="end" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#64748b">ACTIVE</text></g><g class="fi" style="animation-delay:0.35s"><rect x="36" y="140" width="518" height="42" rx="10" fill="url(#card)" stroke="#1e293b"/><circle class="dot" style="animation-delay:0.4s" cx="58" cy="161" r="5" fill="#22c55e" filter="url(#glow)"/><text x="76" y="167" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#e2e8f0">Voice-to-text for clinical workflows</text><text x="538" y="167" text-anchor="end" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#64748b">ACTIVE</text></g><g class="fi" style="animation-delay:0.5s"><rect x="36" y="192" width="518" height="42" rx="10" fill="url(#card)" stroke="#1e293b"/><circle class="dot" style="animation-delay:0.8s" cx="58" cy="213" r="5" fill="#22c55e" filter="url(#glow)"/><text x="76" y="219" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#e2e8f0">Leading &amp; mentoring engineers</text><text x="538" y="219" text-anchor="end" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#64748b">ACTIVE</text></g><g class="fi" style="animation-delay:0.6499999999999999s"><rect x="36" y="244" width="518" height="42" rx="10" fill="url(#card)" stroke="#1e293b"/><circle class="dot" style="animation-delay:1.2000000000000002s" cx="58" cy="265" r="5" fill="#22c55e" filter="url(#glow)"/><text x="76" y="271" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="17" fill="#e2e8f0">Exploring LLM orchestration</text><text x="538" y="271" text-anchor="end" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="12" fill="#64748b">ACTIVE</text></g>
+    <path d="M14,32 L14,14 L32,14" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M576,32 L576,14 L558,14" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M14,328 L14,346 L32,346" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M576,328 L576,346 L558,346" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/>
+    <rect x="1" y="1" width="588" height="358" rx="18" fill="none" stroke="#1e293b" stroke-width="2"/>
+  </g>
+</svg>

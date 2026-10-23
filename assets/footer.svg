@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#111b30" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="neon" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1528"/><stop offset="1" stop-color="#080d1a"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter><radialGradient id="fg" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#a78bfa" stop-opacity="0.18"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient>
+    <clipPath id="frame"><rect width="1200" height="220" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .fi { opacity:0; animation: fi .7s ease-out forwards; }
+    .dot { animation: blink 1.6s ease-in-out infinite; }
+    @keyframes fi { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
+    @keyframes blink { 50% { opacity:.25; } }
+    .cur { animation: cur 1s step-end infinite; }
+    @keyframes cur { 50% { opacity: 0; } }</style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="220" fill="#05070d"/>
+    <rect width="1200" height="220" fill="url(#grid)"/>
+    
+    
+    <rect width="1200" height="220" fill="url(#fg)"/>
+    <text class="fi" x="600.0" y="92" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="44" font-weight="800" fill="url(#neon)" letter-spacing="1">Let's build something great.</text>
+    <text class="fi" style="animation-delay:.3s" x="600.0" y="134" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="19" fill="#94a3b8">Open to collaborations, consulting and hard problems.</text>
+    <g class="fi" style="animation-delay:.6s">
+      <text x="592.0" y="176" text-anchor="middle" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="15" fill="#22d3ee" letter-spacing="2">&gt; connect --with daud</text>
+      <rect class="cur" x="704.0" y="162" width="9" height="17" fill="#22d3ee"/>
+    </g>
+    <path d="M14,32 L14,14 L32,14" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M1186,32 L1186,14 L1168,14" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M14,188 L14,206 L32,206" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M1186,188 L1186,206 L1168,206" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/>
+    <rect x="1" y="1" width="1198" height="218" rx="18" fill="none" stroke="#1e293b" stroke-width="2"/>
+  </g>
+</svg>
