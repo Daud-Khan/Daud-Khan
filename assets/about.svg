@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="360" viewBox="0 0 590 360">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#111b30" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="neon" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1528"/><stop offset="1" stop-color="#080d1a"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter><radialGradient id="amb" cx="0.15" cy="0.1" r="0.8"><stop offset="0" stop-color="#6366f1" stop-opacity="0.16"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+    <clipPath id="frame"><rect width="590" height="360" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .fi { opacity:0; animation: fi .7s ease-out forwards; }
+    .dot { animation: blink 1.6s ease-in-out infinite; }
+    @keyframes fi { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
+    @keyframes blink { 50% { opacity:.25; } }</style>
+  <g clip-path="url(#frame)">
+    <rect width="590" height="360" fill="#05070d"/>
+    <rect width="590" height="360" fill="url(#grid)"/>
+    <rect width="590" height="360" fill="url(#amb)"/>
+    <text x="36" y="56" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="15" fill="#22d3ee" letter-spacing="3">&gt; ABOUT</text><line x1="123.5" y1="51" x2="554" y2="51" stroke="#1e293b" stroke-width="1"/><g class="fi" style="animation-delay:0.2s"><rect x="36" y="86" width="4" height="34" rx="2" fill="url(#neon)"/><text x="56" y="112"><tspan font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="url(#neon)">8+</tspan><tspan dx="8" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" fill="#e2e8f0">years building software</tspan></text></g><g class="fi" style="animation-delay:0.35s"><rect x="36" y="138" width="4" height="34" rx="2" fill="url(#neon)"/><text x="56" y="164"><tspan font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="url(#neon)">7</tspan><tspan dx="8" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" fill="#e2e8f0">years at Productbox</tspan></text></g><g class="fi" style="animation-delay:0.5s"><rect x="36" y="190" width="4" height="34" rx="2" fill="url(#neon)"/><text x="56" y="216"><tspan font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="url(#neon)">★</tspan><tspan dx="8" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" fill="#e2e8f0">Engineering Lead at Productbox</tspan></text></g><g class="fi" style="animation-delay:0.6499999999999999s"><rect x="36" y="242" width="4" height="34" rx="2" fill="url(#neon)"/><text x="56" y="268"><tspan font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="800" fill="url(#neon)">∞</tspan><tspan dx="8" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="18" fill="#e2e8f0">curiosity for hard problems</tspan></text></g><text class="fi" style="animation-delay:.9s" x="36" y="328" font-family="'SF Mono','Cascadia Code',Consolas,'Courier New',monospace" font-size="13" fill="#64748b">// clean systems · fast teams · products people use</text>
+    <path d="M14,32 L14,14 L32,14" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M576,32 L576,14 L558,14" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M14,328 L14,346 L32,346" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/><path d="M576,328 L576,346 L558,346" stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.7"/>
+    <rect x="1" y="1" width="588" height="358" rx="18" fill="none" stroke="#1e293b" stroke-width="2"/>
+  </g>
+</svg>
