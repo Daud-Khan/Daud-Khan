@@ -30,5 +30,5 @@
 <p align="center">
   <a href="https://linkedin.com/in/daud-khan773"><img src="https://img.shields.io/badge/LinkedIn-05070d?style=for-the-badge&logo=linkedin&logoColor=22d3ee"/></a>
   &nbsp;
-  <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-05070d?style=for-the-badge&logo=gmail&logoColor=a78bfa"/></a>
+  <a href="mailto:kdaud63@gmail.com"><img src="https://img.shields.io/badge/Email-05070d?style=for-the-badge&logo=gmail&logoColor=a78bfa"/></a>
 </p>
